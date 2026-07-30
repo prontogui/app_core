@@ -2,7 +2,7 @@
 
 **ProntoGUI Desktop Application**
 
-**Effective Date:** July 17th, 2026
+**Effective Date:** July 29th, 2026
 **Version:** 1.1
 
 ---
@@ -13,7 +13,7 @@ This End User License Agreement ("**EULA**" or "**Agreement**") is a binding leg
 
 **BY INSTALLING, COPYING, OR OTHERWISE USING THE APP, YOU AGREE TO BE BOUND BY THE TERMS OF THIS EULA. IF YOU DO NOT AGREE, DO NOT INSTALL OR USE THE APP.**
 
-This EULA supplements, and is subject to, our [Terms and Conditions](https://prontogui.com/terms-and-conditions/) (the "**T&C**"), which is incorporated herein by reference. In the event of any conflict between this EULA and the T&C with respect to your installation and use of the App, this EULA controls.
+This EULA supplements, and is subject to, our [Terms and Conditions](https://prontogui.com/terms-and-conditions/) (the "**T&C**"), which is incorporated herein by reference. As provided in Section 8 (Software) of the T&C, the terms of this EULA govern your use of the App. In the event of any conflict between this EULA and the T&C with respect to your installation and use of the App, this EULA controls. The T&C continues to govern all other aspects of your relationship with ProntoGUI, including website use, purchases, subscriptions, billing, and dispute resolution.
 
 ---
 
@@ -21,15 +21,26 @@ This EULA supplements, and is subject to, our [Terms and Conditions](https://pro
 
 This EULA governs your use of the **proprietary ProntoGUI desktop application** (the "App"), which is the rendering component of the ProntoGUI framework.
 
-This EULA does **not** apply to the ProntoGUI open-source Go library ("**Golib**") or other ProntoGUI open-source components, which are distributed separately under the BSD-3-Clause license. Your use of those components is governed solely by their respective open-source licenses.
+This EULA does **not** apply to the ProntoGUI open-source Go library ("**Golib**"), open-source App ("**app_core**"), or other ProntoGUI open-source components, which are distributed separately under the BSD-3-Clause license. Your use of those components is governed solely by their respective open-source licenses.
 
 ---
 
 ## 2. License Grant
 
-Subject to your compliance with this EULA, ProntoGUI grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable, **royalty-free** license to install and use the App, at no charge, on devices you own or control, for any lawful purpose, including personal, evaluation, educational, and commercial purposes.
+Subject to your compliance with this EULA and payment of any applicable fees, ProntoGUI grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to install and use the App as follows:
 
-ProntoGUI may in the future offer separate paid offerings (for example, hosted services, support plans, or additional components) under separate terms. Unless and until you affirmatively agree to such separate terms, this EULA governs your use of the App on a free basis.
+### 2.1 Personal License (Free Tier)
+If you have a Personal License, you may install and use the App on devices you own or control solely for:
+- Personal, non-commercial use;
+- Evaluation purposes;
+- Learning, experimentation, or hobby projects; and
+- Non-commercial open-source development.
+
+### 2.2 Commercial License (Paid Subscription)
+If you have a valid, active Commercial License subscription, you may install and use the App on devices you own or control for commercial purposes, subject to the seat, user, or usage limits specified in your subscription plan.
+
+### 2.3 Subscription Basis
+The license granted under this EULA is a **subscription license**. Your right to use the App is contingent on having an active subscription (or being within the scope of the free Personal License). The license automatically terminates if your subscription lapses, is canceled, or is terminated for any reason.
 
 ---
 
@@ -42,8 +53,10 @@ You may not, and you may not permit any third party to:
 3. Rent, lease, lend, sell, sublicense, assign, distribute, publish, transfer, or otherwise make the App available to any third party;
 4. Remove, alter, or obscure any proprietary notices (including copyright, trademark, or patent notices) on or in the App;
 5. Use the App in any manner that violates applicable law or infringes the rights of any third party;
-6. Use the App to develop a competing product; or
-7. Circumvent, disable, or interfere with any license enforcement, authentication, or security mechanism of the App.
+6. Use the App to develop a competing product;
+7. Circumvent, disable, or interfere with any license enforcement, authentication, or security mechanism of the App;
+8. Use a Personal License for any commercial purpose; or
+9. Exceed the scope of use permitted by your subscription tier.
 
 ---
 
@@ -57,19 +70,19 @@ The App is **licensed, not sold**. ProntoGUI and its licensors retain all right,
 
 ## 5. Updates
 
-The App may from time to time download and install updates, including bug fixes, security patches, feature enhancements, or new versions. Such updates are considered part of the App and are subject to this EULA. ProntoGUI is not obligated to provide updates, maintenance, or support, and may discontinue the App at any time.
+The App may from time to time download and install updates, including bug fixes, security patches, feature enhancements, or new versions. Such updates are considered part of the App and are subject to this EULA. ProntoGUI may, at its discretion, require you to install updates in order to continue using the App. ProntoGUI is not obligated to provide updates, maintenance, or support except as specified in your subscription plan or the T&C.
 
 ---
 
 ## 6. Third-Party Components
 
-The App incorporates or is built using third-party components, including but not limited to the Flutter framework and the Dart programming language (trademarks of Google LLC). Your use of such components within the App is subject to the applicable third-party licenses. ProntoGUI is not endorsed by, affiliated with, or sponsored by Google LLC.
+The App incorporates or is built using third-party components, including but not limited to the Flutter framework and the Dart programming language (trademarks of Google LLC). Your use of such components within the App is subject to the applicable third-party licenses. ProntoGUI is not endorsed by, affiliated with, or sponsored by Google LLC. Attribution and license notices for third-party components are available within the App or upon request.
 
 ---
 
 ## 7. Data Collection and Privacy
 
-The App may collect limited information necessary to deliver updates and provide support. Our collection and use of personal information is governed by our [Privacy Policy](https://prontogui.com/privacy-policy/), which is incorporated herein by reference.
+The App may collect limited information necessary to validate your license, deliver updates, and provide support. Our collection and use of personal information is governed by our [Privacy Policy](https://prontogui.com/privacy-policy/), which is incorporated herein by reference.
 
 ---
 
@@ -98,7 +111,9 @@ Some jurisdictions do not allow the exclusion of certain warranties, so some of 
 **TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:**
 
 1. **IN NO EVENT SHALL PRONTOGUI, ITS AFFILIATES, OFFICERS, DIRECTORS, MEMBERS, EMPLOYEES, AGENTS, OR LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES**, including but not limited to loss of profits, revenue, data, use, goodwill, business interruption, or other intangible losses, arising out of or relating to this EULA or your use of (or inability to use) the App, whether based on contract, tort (including negligence), strict liability, or any other legal theory, and whether or not ProntoGUI has been advised of the possibility of such damages.
-2. **PRONTOGUI'S TOTAL CUMULATIVE LIABILITY** arising out of or relating to this EULA or the App, from all causes of action and under all theories of liability, **SHALL NOT EXCEED U.S. $50.**
+
+2. **PRONTOGUI'S TOTAL CUMULATIVE LIABILITY** arising out of or relating to this EULA or the App, from all causes of action and under all theories of liability, **SHALL NOT EXCEED THE TOTAL FEES YOU PAID TO PRONTOGUI FOR THE APP DURING THE SIX (6) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM.** If you have not paid any fees (e.g., you are using a free Personal License), ProntoGUI's total liability shall be limited to U.S. $50. This limitation is consistent with Section 21 of the T&C.
+
 3. These limitations are a fundamental basis of the bargain between you and ProntoGUI and shall apply even if any limited remedy fails of its essential purpose.
 
 Some jurisdictions do not allow the exclusion or limitation of certain damages, so some of the above limitations may not apply to you.
@@ -109,24 +124,31 @@ Some jurisdictions do not allow the exclusion or limitation of certain damages, 
 
 This EULA is effective until terminated. It terminates automatically, without notice, if:
 
-1. You breach any term of this EULA or the T&C; or
-2. ProntoGUI discontinues the App.
+1. Your subscription expires, lapses, or is canceled;
+2. You breach any term of this EULA or the T&C; or
+3. ProntoGUI discontinues the App.
 
-Upon termination, you must cease all use of the App and uninstall and destroy all copies in your possession or control. Sections 3, 4, 8, 9, 10, 12, and 13 survive termination.
+Upon termination, you must cease all use of the App and uninstall and destroy all copies in your possession or control. Sections 3, 4, 8, 9, 10, 12, 13, and 14 survive termination.
 
 ProntoGUI may also terminate or suspend your license immediately if you engage in unauthorized or fraudulent use of the App.
 
 ---
 
-## 12. Governing Law and Disputes
+## 12. Export Compliance
 
-This EULA is governed by the laws of the **State of Michigan, U.S.A.**, without regard to its conflict of laws principles. Any dispute arising out of or relating to this EULA or the App shall be resolved exclusively in the state or federal courts located in Michigan, and you consent to the personal jurisdiction of those courts.
-
-*As your business and user base grow, you may want to revisit this section and adopt more formal dispute-resolution provisions (e.g., mandatory arbitration, class-action waivers) — see the T&C for provisions that can be incorporated later.*
+You agree to comply with all applicable U.S. and international export control laws and regulations. You represent and warrant that you are not located in, under the control of, or a resident of any country or on any list that is subject to U.S. government export restrictions or sanctions.
 
 ---
 
-## 13. General Provisions
+## 13. Governing Law and Dispute Resolution
+
+This EULA is governed by the laws of the **State of Michigan, U.S.A.**, without regard to its conflict of laws principles. The United Nations Convention on Contracts for the International Sale of Goods does not apply.
+
+Any dispute, claim, or controversy arising out of or relating to this EULA or the App shall be resolved in accordance with the dispute resolution provisions set forth in **Section 18 (Dispute Resolution) of the T&C**, including the requirements for informal negotiation, binding arbitration administered by the American Arbitration Association in Livingston County, Michigan, the class action and jury trial waivers, the exceptions for intellectual property claims and injunctive relief, and the one (1) year limitations period. Those provisions are incorporated into this EULA by reference as if fully set forth herein.
+
+---
+
+## 14. General Provisions
 
 **Entire Agreement.** This EULA, together with the T&C, constitutes the entire agreement between you and ProntoGUI regarding the App and supersedes all prior or contemporaneous communications.
 
@@ -138,9 +160,11 @@ This EULA is governed by the laws of the **State of Michigan, U.S.A.**, without 
 
 **Modifications.** ProntoGUI may modify this EULA from time to time by posting an updated version. Your continued use of the App after such modifications constitutes acceptance of the updated EULA.
 
+**U.S. Government End Users.** The App is a "commercial item" as defined in 48 C.F.R. § 2.101. Use, duplication, or disclosure by the U.S. Government is subject to the restrictions set forth in this EULA.
+
 ---
 
-## 14. Contact
+## 15. Contact
 
 Questions about this EULA should be directed to:
 

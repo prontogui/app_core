@@ -18,7 +18,7 @@ const _kEulaAssetPath = 'assets/legal/eula.md';
 
 /// Identifier for the current EULA version. Bump when the EULA text changes
 /// so users are re-prompted to accept the new terms.
-const _kEulaVersion = '2026-04-22';
+const _kEulaVersion = '2026-07-29';
 
 /// If this engine's role is to render one of this package's global
 /// windows, builds the appropriate `*Info` and calls `runApp` for it,
@@ -52,7 +52,7 @@ Future<bool> tryRunGlobalWindow({
       final aboutInfo = AboutInfo(
         appName: 'ProntoGUI™',
         version: packageInfo.version,
-        statusSubtitle: 'Standard Edition',
+        statusSubtitle: 'Free Edition',
         globalAboutWindowKey: kAboutWindowKey,
         globalLicensingCreditsWindowKey: kLicensingCreditsWindowKey,
         showLicenseDetails: false,
