@@ -5,6 +5,7 @@
 
 import 'package:dartlib/dartlib.dart';
 import 'package:dartlib/log.dart';
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -21,6 +22,12 @@ import '../window/window_management.dart';
 const _kConfigureWindowMessage = 'configure_window';
 
 const _menuChannel = MethodChannel('com.prontogui.core/menu');
+
+/// Native-side (macOS only) registration channel used to tell
+/// `AppDelegate` that this engine is the instance window, so it should
+/// rebind the shared native menu bar's actions to this engine. See
+/// `macos/Runner/AppDelegate.swift`'s `registerEngineForMenu`.
+const _menuRegistrationChannel = MethodChannel('com.prontogui.core/menu_registration');
 
 /// Wires up the model, gRPC comm, embodifier, event/builder synchros,
 /// menu handler, and the inherited-widget tree, then calls [runApp].
@@ -119,6 +126,7 @@ void runInstanceWindowApp({
   // First instance window in the process registers the menu handler;
   // subsequent windows can't register since the channel is process-wide.
   _menuHandler(windowManagement);
+  _claimNativeMenuTarget();
 
   runApp(InheritedCommClient(
     notifier: commNotifier,
@@ -133,6 +141,23 @@ void runInstanceWindowApp({
       ),
     ),
   ));
+}
+
+/// Tells the macOS native side that this engine is the instance window,
+/// so `AppDelegate` rebinds the shared native menu bar's actions to it.
+///
+/// Needed because the primary engine isn't always the instance window —
+/// on first launch it's the EULA gate window instead (see
+/// `StartupSequence` / `main.dart`), and `AppDelegate` used to bind the
+/// menu channel once, statically, to whichever window existed at app
+/// launch. That left the real instance window (spun up afterward in a
+/// separate engine once the EULA is accepted) unable to receive native
+/// menu clicks until the app was relaunched. No-op on Windows/Linux,
+/// which render an in-Flutter menu bar (`WindowMenuBar`) instead of a
+/// native one and don't implement this channel.
+void _claimNativeMenuTarget() {
+  if (defaultTargetPlatform != TargetPlatform.macOS) return;
+  _menuRegistrationChannel.invokeMethod('claimTarget');
 }
 
 void _menuHandler(WindowManagement windowManagement) {

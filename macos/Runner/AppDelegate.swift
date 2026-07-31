@@ -12,11 +12,41 @@ class AppDelegate: FlutterAppDelegate {
             let controller = window.contentViewController as? FlutterViewController
         else { return }
 
-        // Create a channel you’ll use to notify Dart about menu selections.
-        menuChannel = FlutterMethodChannel(
-            name: "com.prontogui.core/menu",
+        registerEngineForMenu(controller)
+    }
+
+    /// Makes [controller]'s engine eligible to own the shared native
+    /// menu channel: listens for that engine to claim itself as the
+    /// menu target and rebinds `menuChannel` to it when it does.
+    ///
+    /// The primary engine isn't always the instance window — at first
+    /// launch it's the EULA gate window instead, and the real instance
+    /// window only comes up afterward in a separate engine (see
+    /// `StartupSequence`/`main.dart`). Binding `menuChannel` once,
+    /// statically, to whichever window happened to exist at
+    /// `applicationDidFinishLaunching` would wire native menu clicks to
+    /// an engine that never listens for them. Only the engine that runs
+    /// `runInstanceWindowApp` (`instance_window_app.dart`'s
+    /// `_menuHandler`) ever claims — gate/global-window engines (EULA,
+    /// About, Settings, ...) never do — so this call must be made once
+    /// for the primary window here, and once per secondary window from
+    /// `MainFlutterWindow`'s window-created callback.
+    func registerEngineForMenu(_ controller: FlutterViewController) {
+        let registrationChannel = FlutterMethodChannel(
+            name: "com.prontogui.core/menu_registration",
             binaryMessenger: controller.engine.binaryMessenger
         )
+        registrationChannel.setMethodCallHandler { [weak self] call, result in
+            guard call.method == "claimTarget" else {
+                result(FlutterMethodNotImplemented)
+                return
+            }
+            self?.menuChannel = FlutterMethodChannel(
+                name: "com.prontogui.core/menu",
+                binaryMessenger: controller.engine.binaryMessenger
+            )
+            result(nil)
+        }
     }
 
     override func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
