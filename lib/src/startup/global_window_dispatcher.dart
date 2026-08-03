@@ -52,7 +52,7 @@ Future<bool> tryRunGlobalWindow({
       final aboutInfo = AboutInfo(
         appName: 'ProntoGUI™',
         version: packageInfo.version,
-        statusSubtitle: 'Free Edition',
+        statusSubtitle: 'Free Desktop App',
         globalAboutWindowKey: kAboutWindowKey,
         globalLicensingCreditsWindowKey: kLicensingCreditsWindowKey,
         showLicenseDetails: false,
