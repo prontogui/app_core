@@ -4,18 +4,15 @@ The free, open-source core of [ProntoGUI](https://prontogui.com) — a Flutter
 desktop application that connects to a ProntoGUI server, receives CBOR-encoded
 primitive updates, and renders them through an "embodiment" system.
 
-This app is free to use for personal and evaluation purposes. It supports a
-single instance window plus the full set of global windows (About, Settings,
-Event Log, EULA, Licensing Credits). Multiple simultaneous instance windows
-and license management are commercial-only features layered on top of this
-package by [ProntoGUI's proprietary `app` repo](https://github.com/prontogui/app).
+This app is free to use, for both end users of ProntoGUI-based solutions and
+the developers building them. It supports multiple simultaneous instance
+windows plus the full set of global windows (About, Settings, Event Log,
+EULA, Licensing Credits).
 
 ## Relationship to other ProntoGUI repos
 
 - [`dartlib`](https://github.com/prontogui/dartlib) — primitive definitions,
   CBOR parsing, and gRPC communication. This package's core dependency.
-- `app` (private) — the commercial, multi-instance-window build. Depends on
-  this package the same way this package depends on `dartlib`.
 
 ## Running
 

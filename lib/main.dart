@@ -20,19 +20,12 @@ import 'src/startup/startup_sequence.dart';
 
 /// Application entry point for the free/open-source ProntoGUI Core app.
 ///
-/// This is the single-instance-window edition: it caps
-/// `WindowManagement`'s instance-window count at 1 (see the
-/// `maxInstanceWindows` argument to `WindowManagement.ensureInitialized`
-/// below), but otherwise supports the full set of global windows
-/// (EULA/About/Settings/Event Log/Licensing Credits) via
+/// This supports multiple instance windows (via `WindowManagement`'s
+/// default `maxInstanceWindows`) as well as the full set of global
+/// windows (EULA/About/Settings/Event Log/Licensing Credits) via
 /// `desktop_multi_window`, exactly like any other multi-engine desktop
 /// Flutter app. There's no licensing here — this is the entire free
 /// product.
-///
-/// The proprietary `app` repo mirrors this file, raising the instance
-/// window cap, adding its own licensing startup steps, and registering
-/// its own additional global window (Licensing) alongside this
-/// package's globals.
 ///
 /// Pre-flight gates (currently just the EULA, with room for future
 /// gates like "Updates Available") are sequenced by [StartupSequence];
@@ -49,12 +42,10 @@ Future<void> main(List<String> args) async {
   // WindowManagement, runApp).
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Hand WM the list of global windows this app supports, and cap
-  // instance windows at 1 — the free/personal edition's defining
-  // constraint. See `src/global_windows.dart`.
+  // Hand WM the list of global windows this app supports. See
+  // `src/global_windows.dart`.
   await WindowManagement.ensureInitialized(
     coreGlobalWindowSettings,
-    maxInstanceWindows: 1,
   );
 
   // Apply debug-only side effects of [DebugConfig] (paint overlays,

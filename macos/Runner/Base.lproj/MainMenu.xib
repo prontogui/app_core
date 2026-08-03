@@ -74,6 +74,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="File" id="d4Z-mU-C9i">
                         <items>
+                            <menuItem title="New Window" image="macwindow" catalog="system" keyEquivalent="n" id="CQ5-0g-fbh">
+                                <connections>
+                                    <action selector="newWindow:" target="-1" id="doF-6N-Gf6"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="fPW-Ho-c8S"/>
                             <menuItem title="Configure Window" image="macwindow.and.pointer.arrow.rtl" catalog="system" keyEquivalent="k" id="OvK-qS-N0j" userLabel="Configure Window">
                                 <connections>
                                     <action selector="configureWindow:" target="-1" id="zp5-Qa-9oy"/>
@@ -398,6 +404,7 @@
         <image name="gear" catalog="system" width="17" height="16"/>
         <image name="info.circle.fill" catalog="system" width="15" height="15"/>
         <image name="list.bullet.rectangle" catalog="system" width="18" height="14"/>
+        <image name="macwindow" catalog="system" width="18" height="14"/>
         <image name="macwindow.and.pointer.arrow.rtl" catalog="system" width="19" height="17"/>
         <image name="xmark.square" catalog="system" width="15" height="14"/>
     </resources>

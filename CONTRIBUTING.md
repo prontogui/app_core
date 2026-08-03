@@ -5,14 +5,9 @@ open-source core of [ProntoGUI](https://prontogui.com).
 
 ## Scope of this repo
 
-`app_core` is the free/evaluation product: a single-instance-window desktop
-renderer plus the full set of global windows (About, Settings, Event Log,
-EULA, Licensing Credits). It does **not** contain:
-
-- Multi-instance-window support (raising the instance-window cap, "New
-  Window" affordances) — that lives in the commercial App.
-- License activation/validation/enforcement or any LemonSqueezy integration
-  ("licensing.dart"-equivalent code) — also proprietary, also lives in commercial App.
+`app_core` is licensed as a free product: a desktop renderer supporting multiple
+instance windows plus the full set of global windows (About, Settings,
+Event Log, EULA, Licensing Credits).
 
 Pull requests that add license-gating logic or otherwise blur this boundary
 will be asked to be reworked or closed. If you're unsure whether something

@@ -99,6 +99,13 @@ class AppDelegate: FlutterAppDelegate {
         ])
     }
 
+    @IBAction func newWindow(_ sender: NSMenuItem) {
+        menuChannel?.invokeMethod("menu.newWindow", arguments: [
+            "title": sender.title,
+            "tag": sender.tag
+        ])
+    }
+
     @IBAction func configureWindow(_ sender: NSMenuItem) {
         menuChannel?.invokeMethod("menu.configureWindow", arguments: [
             "title": sender.title,
