@@ -1,3 +1,7 @@
+// Copyright 2024-2026 ProntoGUI, LLC
+// ProntoGUI™ is a trademark of ProntoGUI, LLC
+// Licensed under the BSD 3-Clause License. See the LICENSE file.
+
 // This code was copied from the project https://github.com/hawkkiller/popup_playground
 // which was developed by Michael Lazebny.  For a good introduction to how this works, he
 // published a good article at https://lazebny.io/popups-in-flutter/

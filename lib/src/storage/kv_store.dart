@@ -1,3 +1,7 @@
+// Copyright 2024-2026 ProntoGUI, LLC
+// ProntoGUI™ is a trademark of ProntoGUI, LLC
+// Licensed under the BSD 3-Clause License. See the LICENSE file.
+
 /// Cross-platform key/value store backed by SQLite.
 ///
 /// Replaces the slice of `SharedPreferencesAsync` this app uses, with two

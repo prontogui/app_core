@@ -1,3 +1,7 @@
+// Copyright 2024-2026 ProntoGUI, LLC
+// ProntoGUI™ is a trademark of ProntoGUI, LLC
+// Licensed under the BSD 3-Clause License. See the LICENSE file.
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_color_picker_plus/flutter_color_picker_plus.dart';

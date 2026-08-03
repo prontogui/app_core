@@ -1,7 +1,6 @@
 // Copyright 2024-2026 ProntoGUI, LLC
 // ProntoGUI™ is a trademark of ProntoGUI, LLC
-// All rights reserved. Use of this source code is governed by the
-// proprietary license that can be found in the LICENSE file.
+// Licensed under the BSD 3-Clause License. See the LICENSE file.
 import 'package:app_core/src/embodiment/properties.dart';
 import 'package:dartlib/dartlib.dart' as pg;
 import 'package:flutter/material.dart';

@@ -1,3 +1,7 @@
+// Copyright 2024-2026 ProntoGUI, LLC
+// ProntoGUI™ is a trademark of ProntoGUI, LLC
+// Licensed under the BSD 3-Clause License. See the LICENSE file.
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:app_core/src/widgets/color_field.dart';
 
