@@ -112,8 +112,8 @@ final _activationNameLksSettings = LicenseKeyStyleSettings(
 class LicenseKeyFieldValue {
   LicenseKeyFieldValue(this.enteredText, this.isValid);
 
-  final enteredText;
-  final isValid;
+  final String enteredText;
+  final bool isValid;
 }
 
 /// A widget that provides viewing and editing a license key.

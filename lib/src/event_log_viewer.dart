@@ -296,7 +296,6 @@ class _EventLogViewerState extends State<EventLogViewer> {
 
   Widget _buildEventList() {
     final includeWindowTitle = _windowFilter == null;
-    final defaultTextStyle = DefaultTextStyle.of(context).style;
 
     return ListView.builder(
       controller: _scrollController,

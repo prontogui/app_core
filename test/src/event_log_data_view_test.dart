@@ -360,8 +360,6 @@ void main() {
 
     test('Empty log message is okay', () async {
 
-      print("entering last test 2");
-
       // Create window1
 
       // Create latest log file
