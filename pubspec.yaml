@@ -45,7 +45,7 @@ dependencies:
 
   flutter_color_picker_plus: ^2.2.1
   scroll_to_index: ^3.0.1
-  file_picker: ^10.3.10
+  file_picker: ^11.0.3
   window_manager: ^0.5.1
   desktop_multi_window: ^0.3.0
   args: ^2.7.0
