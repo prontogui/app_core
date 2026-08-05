@@ -44,7 +44,7 @@ class ExportFileEmbodiment extends StatelessWidget {
         onPressed: () async {
           // TODO:  wait asyncrhonously for user to pick file and handle it
           // using a Future.
-          var saveTo = await FilePicker.platform.saveFile(
+          var saveTo = await FilePicker.saveFile(
               fileName: exportFile.name.toString(),
               dialogTitle: "Select location to export PDF file to");
 

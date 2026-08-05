@@ -41,7 +41,7 @@ class ImportFileEmbodiment extends StatelessWidget {
         onPressed: () async {
           // TODO:  wait asyncrhonously for user to pick file and handle it
           // using a Future.
-          FilePickerResult? result = await FilePicker.platform.pickFiles(
+          FilePickerResult? result = await FilePicker.pickFiles(
               type: FileType.custom,
               allowedExtensions: importFile.validExtensions,
               dialogTitle: "Select file to import");
